@@ -1,0 +1,18 @@
+name: rachhann
+
+services:
+  admin:
+    build:
+      context: ../admin
+      dockerfile: Dockerfile
+    container_name: Rachan-admin
+    ports:
+      - "8021:80"
+
+  client:
+    build:
+      context: ../client
+      dockerfile: Dockerfile
+    container_name: Rachan-client
+    ports:
+      - "8021:80"
