@@ -3,16 +3,16 @@ name: rachhann
 services:
   admin:
     build:
-      context: ../admin
+      context: ./admin
       dockerfile: Dockerfile
-    container_name: Rachan-admin
+    container_name: Rachhann-admin
     ports:
       - "8021:80"
 
   client:
     build:
-      context: ../client
-      dockerfile: Dockerfile
-    container_name: Rachan-client
+      context: ./client
+      dockerfile: dockerfile
+    container_name: Rachhann-client
     ports:
-      - "8021:80"
+      - "8022:80"
